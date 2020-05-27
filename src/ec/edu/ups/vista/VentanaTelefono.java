@@ -15,10 +15,10 @@ public class VentanaTelefono extends Frame {
 
    //Creamos la ventana
     
-    public VentanaTelefono(String titulo, int ancho, int alto){
+    public VentanaTelefono(String titulo, int ancho, int alto,int x, int y ){
         this.setTitle(titulo);
         this.setSize(ancho,alto);
-        this.setLocation(100,100);
+        this.setLocation(x,y);
         this.setVisible(true);
     }
 }

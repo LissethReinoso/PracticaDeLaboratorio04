@@ -23,6 +23,8 @@ public class Test {
         VentanasTelefono ventanas=new VentanasTelefono();
         ventanas.VentanasT();
         ventanas.VentanaT2();
+        ventanas.VentanaT3();
+        ventanas.VentanT4();
         
     }
 }

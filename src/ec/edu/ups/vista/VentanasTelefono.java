@@ -20,7 +20,7 @@ import java.awt.TextField;
 public class VentanasTelefono {
 
     public void VentanasT() {
-        VentanaTelefono ventana = new VentanaTelefono("TELEFONOS", 400, 100);
+        VentanaTelefono ventana = new VentanaTelefono("TELEFONOS", 400, 100,100,100);
         //Creamos paneles
         Panel panelGeneral = new Panel();
         Panel panel1 = new Panel();
@@ -50,16 +50,14 @@ public class VentanasTelefono {
     }
 
     public void VentanaT2() {
-        VentanaTelefono ventana = new VentanaTelefono("REGISTRAR TELEFONOS",600, 600);
+        VentanaTelefono ventana = new VentanaTelefono("REGISTRAR TELEFONOS",900,200,100,200);
         //Paneles
         Panel panelGeneral = new Panel();
         Panel panel3 = new Panel();
         Panel panel4 = new Panel();
 
-        //GridLayout para crear una matriz con componentes 
-        GridLayout registro = new GridLayout(7, 2);
         
-        //BorderLayout para ubicar los botones a un lado
+        //BorderLayout para ubicar los botones
         BorderLayout ub=new BorderLayout();
         
         //FlowLayout visualiza botones consecutivos
@@ -76,6 +74,11 @@ public class VentanasTelefono {
         botones[5] = new Button("Número:");
         botones[6] = new Button("Tipo:");
         botones[7] = new Button("Operadora:");
+        
+        //Introducir un texto que no se puede modificar
+        Label titulo = new Label("TELÉFONOS:");
+       //Añadimos el texto al panel
+        panelGeneral.add(titulo);
          
           //Ingresamos datos:
           TextField codigo1=new TextField(10);
@@ -103,7 +106,7 @@ public class VentanasTelefono {
         panel3.setLayout(b);
         ventana.add(panelGeneral);
         
-        panelGeneral.add(panel3,BorderLayout.WEST);
+        panelGeneral.add(panel3);
         panelGeneral.add(panel4);
         
         //Añade al panel los botones 
@@ -116,14 +119,61 @@ public class VentanasTelefono {
         panel3.add(botones[6]);
         panel3.add(botones[7]);
         
+    }
+    
+    public void VentanaT3(){
+         VentanaTelefono ventana = new VentanaTelefono("MODIFICAR TELEFONOS",300,200,500,400);
+         //Creamos panel
+         Panel panelGeneral=new Panel();
+         
+         //GridLayout para crear botones
+         GridLayout m=new GridLayout(3,1);
+         
+         //Creamos los botones
+         
+         Button [] boton=new Button[3];
+         boton[0]= new Button("Modificar el telefono");
+         boton[1]=new Button("Eliminar el telefono");
+         boton[2]=new Button("No hacer cambios");
+         
+         //Añadir al panel la matriz
+         panelGeneral.setLayout(m);
+         //Añadir botones al panel}
+         panelGeneral.add(boton[0]);
+         panelGeneral.add(boton[1]);
+         panelGeneral.add(boton[2]);
+         
+         //Añadimos el panel a la ventana
+         ventana.add(panelGeneral);
+         
+    }
+    
+    public void VentanT4(){
+        VentanaTelefono ventana = new VentanaTelefono("MODIFICAR TELFONO",900,200,200,300);
         
+        //creamos paneles
+        Panel panelGeneral=new Panel();
+        Panel panel5=new Panel();
+        Panel panel6=new Panel();
         
+        //BorderLayout para ubicar los botones
+        BorderLayout ub=new BorderLayout();
         
-        
-        
-        
-        
+        //Creamos boton
+       Button c=new Button("Código:");
+       
+       //Agregamos la ubicacion de botones
+       panelGeneral.setLayout(ub);
+       
+       //Agregamos a la ventana el panel 
+       ventana.add(panelGeneral);
+       
+       //Agregamos al panel el boton 
+       //panel5.add(c);
+       
+       panelGeneral.add(c);
+       
+       
         
     }
-
 }
