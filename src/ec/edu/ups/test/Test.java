@@ -22,7 +22,7 @@ public class Test {
         
         VentanasTelefono ventanas=new VentanasTelefono();
         ventanas.VentanasT();
-        
+        ventanas.VentanaT2();
         
     }
 }
