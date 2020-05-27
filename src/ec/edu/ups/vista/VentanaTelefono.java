@@ -18,7 +18,7 @@ public class VentanaTelefono extends Frame {
     public VentanaTelefono(String titulo, int ancho, int alto){
         this.setTitle(titulo);
         this.setSize(ancho,alto);
-        this.setLocation(200,400);
+        this.setLocation(100,100);
         this.setVisible(true);
     }
 }
