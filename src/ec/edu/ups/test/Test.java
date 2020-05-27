@@ -25,6 +25,7 @@ public class Test {
         ventanas.VentanaT2();
         ventanas.VentanaT3();
         ventanas.VentanT4();
+        ventanas.VentanaT5();
         
     }
 }

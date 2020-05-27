@@ -145,7 +145,6 @@ public class VentanasTelefono {
 
         //creamos paneles
         Panel panelGeneral = new Panel();
-        Panel panel5 = new Panel();
         Panel panel6 = new Panel();
 
         //BorderLayout para ubicar los botones
@@ -172,7 +171,51 @@ public class VentanasTelefono {
     }
 
     public void VentanaT5() {
-            VentanaTelefono ventana = new VentanaTelefono(" TELEFONO NUEVO:", 300, 200, 100, 400);
-            
+        VentanaTelefono ventana = new VentanaTelefono(" TELEFONO NUEVO:", 500, 200, 100, 400);
+
+        //Creamos paneles
+        Panel panelGeneral = new Panel();
+        Panel panel8=new Panel();
+        Panel panel7 = new Panel();
+
+        //FlowLayout visualiza botones consecutivos
+        FlowLayout b = new FlowLayout();
+        
+        //Creamos los botones
+        Button[] botones = new Button[4];
+        botones[0] = new Button("Código:");
+        botones[1] = new Button("Número:");
+        botones[2] = new Button("Tipo:");
+        botones[3] = new Button("Operadora:");
+        
+        //Introducir un texto que no se puede modificar
+        Label titulo = new Label("TELÉFONO NUEVO:");
+        //Añadimos el texto al panel
+        panelGeneral.add(titulo);
+        
+        //Ingresamos datos:
+        TextField codigo1 = new TextField(10);
+        TextField numero1 = new TextField(10);
+        TextField tipo1 = new TextField(10);
+        TextField operadora1 = new TextField(10);
+        
+        panel7.add(codigo1);
+        panel7.add(numero1);
+        panel7.add(tipo1);
+        panel7.add(operadora1);
+        
+        //añadimos a la ventana los paneles
+        panelGeneral.setLayout(b);
+        panel7.setLayout(b);
+        ventana.add(panelGeneral);
+        panelGeneral.add(panel8);
+        panelGeneral.add(panel7);
+       
+        //Añade al panel los botones 
+        panel8.add(botones[0]);
+        panel8.add(botones[1]);
+        panel8.add(botones[2]);
+        panel8.add(botones[3]);
+        
     }
 }
