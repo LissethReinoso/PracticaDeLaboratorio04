@@ -10,6 +10,9 @@ __OBJETIVOS:__
   IDE Apache NetBeans 11.3
   Java= JDK 14
   
+  
+  
+  
  _1.Diseñar un prototipo de la aplicación Agenda telefónica._
   
    ![PROTOTIPO](https://github.com/LissethReinoso/PracticaDeLaboratorio04/blob/master/img297.jpg)
@@ -106,6 +109,8 @@ __RECOMENDACIONES__
 
 _NOMBRE DEL ESTUDIANTE:_
 Lisseth Reinoso
+
+
  _Firma:_
  
 ![Firma](https://github.com/LissethReinoso/PracticaDeLaboratorio04/blob/master/img114.jpg)
